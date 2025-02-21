@@ -1,0 +1,51 @@
+{
+	"author": {
+		"name": "Baptiste Pillot",
+		"email": "baptiste@pillot.fr"
+	},
+	"dependencies": {
+		"@itrocks/action": "latest",
+		"@itrocks/action-bar": "latest",
+		"@itrocks/action-request": "latest",
+		"@itrocks/route": "latest",
+		"@itrocks/storage": "latest",
+		"@itrocks/ux-core": "latest"
+	},
+	"description": "Generic action-based object output in HTML and JSON",
+	"devDependencies": {
+		"sass": "^1.83",
+		"typescript": "~5.6"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"exports": "./cjs/output.js",
+	"homepage": "https://it.rocks",
+	"files": [
+		"LICENSE",
+		"README.md",
+		"cjs/*",
+		"css/*",
+		"!*.map"
+	],
+	"keywords": [
+		"backend",
+		"component",
+		"output",
+		"it.rocks",
+		"UI",
+		"UX"
+	],
+	"license": "ISC",
+	"name": "@itrocks/output",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/itrocks-ts/output.git"
+	},
+	"scripts": {
+		"build": "tsc -p tsconfig.json && cp src/*.html cjs/ && npm run build:css",
+		"build:css": "sass --no-source-map src/output.scss:css/output.css"
+	},
+	"types": "./cjs/output.d.ts",
+	"version": "0.0.1"
+}
