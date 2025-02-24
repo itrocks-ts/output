@@ -26,6 +26,7 @@
 		"README.md",
 		"cjs/*",
 		"css/*",
+		"routes.json",
 		"!*.map"
 	],
 	"keywords": [
@@ -55,5 +56,5 @@
 		"build:css": "sass --no-source-map src/output.scss:css/output.css"
 	},
 	"types": "./cjs/output.d.ts",
-	"version": "0.0.2"
+	"version": "0.0.3"
 }
