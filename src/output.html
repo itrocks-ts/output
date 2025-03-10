@@ -12,14 +12,15 @@
 <main>
 <!--BEGIN-->
 
+	<!--#main-->
 	<article data-action="output" data-class="{%name}" data-id="{id}" data-route="{@route}">
 		<header>
 			<h2>{@output.ucFirst}</h2>
 			<ul class="general actions">
 				<li class="close"><a href="app://(@typeRoute)/list" target="main">Close</a></li>
-				<li class="edit"><a href="app://(@route)/edit" target="main">Edit</a></li>
-				<li class="print"><a href="app://(@route)/print/pdf">Print</a></li>
-				<li class="delete"><a href="app://(@route)/delete" target="#notifications:prepend">Delete</a></li>
+				<!---.actions-->
+				<li class="{action}">{{template}}</li>
+				<!--end-->
 			</ul>
 		</header>
 		<ul class="object properties">
@@ -28,6 +29,7 @@
 			<!--end-->
 		</ul>
 	</article>
+	<!--#end-->
 
 <!--END-->
 </main>
