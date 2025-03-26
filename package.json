@@ -17,11 +17,11 @@
 	"exports": "./cjs/output.js",
 	"homepage": "https://it.rocks",
 	"files": [
+		"config.yaml",
 		"LICENSE",
 		"README.md",
 		"cjs/*",
 		"css/*",
-		"routes.json",
 		"!*.map"
 	],
 	"keywords": [
@@ -51,5 +51,5 @@
 		"build:css": "sass --no-source-map src:css"
 	},
 	"types": "./cjs/output.d.ts",
-	"version": "0.0.7"
+	"version": "0.0.8"
 }
