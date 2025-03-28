@@ -47,9 +47,9 @@
 		"url": "git+https://github.com/itrocks-ts/output.git"
 	},
 	"scripts": {
-		"build": "tsc -p tsconfig.json && cp src/*.html cjs/ && npm run build:css",
+		"build": "tsc && cp src/*.html cjs/ && npm run build:css",
 		"build:css": "sass --no-source-map src:css"
 	},
 	"types": "./cjs/output.d.ts",
-	"version": "0.0.8"
+	"version": "0.0.9"
 }
