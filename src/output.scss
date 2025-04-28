@@ -25,14 +25,6 @@ ul.object.properties {
 			content: ' ';
 			white-space: pre;
 		}
-
-		> ul {
-			display: block;
-
-			> li {
-				display: inline-block;
-			}
-		}
 	}
 }
 
@@ -44,8 +36,16 @@ article:not([data-action=edit]) ul.object.properties > li {
 		border-radius: 4px;
 		padding: 6px;
 	}
+}
 
-	> ul > li:not(:first-child):before {
-		content: ', ';
+ul[data-type=objects] {
+	display: block;
+
+	> li {
+		display: inline-block;
 	}
+}
+
+article:not([data-action=edit]) ul[data-type=objects] > li:not(:first-child):before {
+	content: ', ';
 }
