@@ -28,7 +28,7 @@ ul.object.properties {
 	}
 }
 
-article:not([data-action=edit]) ul.object.properties > li {
+article ul.object.properties > li {
 
 	> :not(label) {
 		background: #f4f4f4;
@@ -36,16 +36,16 @@ article:not([data-action=edit]) ul.object.properties > li {
 		border-radius: 4px;
 		padding: 6px;
 	}
-}
 
-ul[data-type=objects] {
-	display: block;
+	> ul {
+		display: block;
 
-	> li {
-		display: inline-block;
+		> li {
+			display: inline-block;
+
+			&:not(:first-child):before {
+				content: ', ';
+			}
+		}
 	}
-}
-
-article:not([data-action=edit]) ul[data-type=objects] > li:not(:first-child):before {
-	content: ', ';
 }
