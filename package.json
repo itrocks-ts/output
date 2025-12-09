@@ -8,8 +8,8 @@
 	},
 	"description": "Generic action-based object output in HTML and JSON",
 	"devDependencies": {
-		"sass": "^1.83",
-		"typescript": "~5.8"
+		"sass": "^1.95",
+		"typescript": "~5.9"
 	},
 	"engines": {
 		"node": ">=18"
@@ -52,5 +52,5 @@
 		"build:html": "cp src/*.html cjs/"
 	},
 	"types": "./cjs/output.d.ts",
-	"version": "0.0.18"
+	"version": "0.0.19"
 }
