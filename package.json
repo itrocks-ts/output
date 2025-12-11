@@ -25,10 +25,10 @@
 		"!*.map"
 	],
 	"keywords": [
+		"action",
 		"API",
 		"backend",
 		"component",
-		"css",
 		"display",
 		"generic",
 		"html",
@@ -38,7 +38,8 @@
 		"render",
 		"standard",
 		"UI",
-		"UX"
+		"UX",
+		"view"
 	],
 	"license": "ISC",
 	"name": "@itrocks/output",
@@ -52,5 +53,5 @@
 		"build:html": "cp src/*.html cjs/"
 	},
 	"types": "./cjs/output.d.ts",
-	"version": "0.0.19"
+	"version": "0.0.20"
 }
