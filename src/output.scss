@@ -12,7 +12,7 @@ ul.object.properties > li,
 		white-space: nowrap;
 	}
 
-	> :empty:before {
+	> :empty::before {
 		content: ' ';
 		white-space: pre;
 	}
@@ -53,7 +53,7 @@ article ul.object.properties > li {
 		> li {
 			display: inline-block;
 
-			&:not(:last-child):after {
+			&:not(:last-child)::after {
 				content: ', ';
 				margin-right: .3em;
 			}
