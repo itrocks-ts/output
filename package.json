@@ -8,11 +8,12 @@
 	},
 	"description": "Generic action-based object output in HTML and JSON",
 	"devDependencies": {
+		"@types/node": "^24.10",
 		"sass": "^1.95",
-		"typescript": "~5.9"
+		"typescript": "^6.0"
 	},
 	"engines": {
-		"node": ">=18"
+		"node": ">=24"
 	},
 	"exports": "./cjs/output.js",
 	"homepage": "https://it.rocks",
@@ -20,8 +21,8 @@
 		"config.yaml",
 		"LICENSE",
 		"README.md",
-		"cjs/*",
-		"css/*",
+		"cjs",
+		"css",
 		"!*.map"
 	],
 	"keywords": [
@@ -52,6 +53,5 @@
 		"build:css": "sass --no-source-map src:css",
 		"build:html": "cp src/*.html cjs/"
 	},
-	"types": "./cjs/output.d.ts",
-	"version": "0.2.0"
+	"version": "0.2.1"
 }
